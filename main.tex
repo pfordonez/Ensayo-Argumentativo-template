@@ -2,41 +2,44 @@
 %Versión 0.1
 %Profesor: pfordonez@unl.edu.ec
 %ORCID: https://orcid.org/0000-0001-8079-7694
+%\documentclass[runningheads]{llncs}
 
-\documentclass[runningheads]{llncs}
-%\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel} 
 \usepackage{hyperref}
 \usepackage{url}
+\usepackage{authblk}
+\usepackage{xcolor}
+\usepackage{academicons}
 
+\definecolor{orcidlogocol}{HTML}{A6CE39}
 
-\begin{document}
-\title{Título del Ensayo: hasta 20 palabras}
-%Cambiar ORCID
-\author{
-Autor del Trabajo\inst{1,2}\orcidID{0000-0001-8079-7694}  
+\newcommand{\orcid}[1]{\href{https://orcid.org/#1}{\textcolor{orcidlogocol}{\aiOrcid}}}
+
+\title{Título del Ensayo}
+
+\author[1]{
+  Pablo F. Ordoñez-Ordoñez \orcid{0000-0001-8079-7694} 
 }
 
 %No cambiar
-\institute{Facultad de Energía, Universidad Nacional de Loja, Av. Pío Jaramillo Alvarado, La Argelia, Loja, Ecuador \and
-Carrera de Ingeniería en Sistemas/Computación, Asignatura de Análisis y Diseño de Sistemas, profesor pfordonez@unl.edu.ec}
-\maketitle
+\affil[1]{Universidad Nacional de Loja, Ecuador, Facultad de Energía, CIS, Análisis y Diseño de Sistemas, profesor \href{mailto:pfordonez@unl.edu.ec}{pfordonez@unl.edu.ec}}
 
-%\begin{abstract}
-%El presente documento es una plantilla que deberá usar cada estudiante para escribir su ensayo en \LaTeX\ según \cite{latexcompanion,knuthwebsite} y con estilo IEEE conforme la guía de \cite{ruiz2016guia}. Para asegurar la calidad del ensayo es importe que se tome en cuenta los recursos: \cite{you1} y \cite{you2} y bibliografía proporcionada en el \href{https://eva.eestudiantes.ec}{EVA}\footnote{\url{https://eva.eestudiantes.ec} Entorno Virtual de Aprendizaje CIS}    \\
-%`` Un ensayo expositivo es aquel que se caracteriza por brindar al lector una explicación detallada de un tema determinado". La exposición tiene una clara finalidad didáctica. Se explica algo que sea complejo de entender. Es lógico que en estos ensayos, el uso de los párrafos explicativos o expositivos es parte fundamental.
-%\end{abstract}
+
+
+\begin{document}
+\maketitle
 
 \section{Introducción}
 
 Se inicia con una \textbf{introducción}  que es la primera oración o párrafo  y debe llamar la atención del lector y no dejarlo ir. Hay diferentes formas de llamar la atención del lector: puedes presentar una cita,  compartir una anécdota, analogía general sobre tu tema etc. Se debe plantear el tema que se abordará, contextualizar, ofrecer antecedentes, citar, delimitar el tema, explicar la tesis y objetivo del ensayo.
 
 \section{Desarrollo}
-Es el cuerpo del ensayo y esta conformado por los diferentes párrafos que desarrollan las ideas que justifican y argumentan la tesis propuesta, Se cita, conceptualiza, explica, compara, describe, narra, expone y se argumenta. Se puede iniciar con una cronología situando con fechas los antecedentes, luego una descripción y finalizar con un ejemplo, sin embargo no se debe analizar los hechos de manera subjetiva o hacer una opinión propia sobre el tema. 
+Es el cuerpo del ensayo y esta conformado por los diferentes párrafos que desarrollan las ideas que justifican y argumentan la tesis propuesta, Se cita, conceptualiza, explica, compara, describe, narra, expone y se argumenta. Se puede iniciar con una cronología situando con fechas los antecedentes, luego una descripción y finalizar con un ejemplo, sin embargo no se debe analizar los hechos de manera subjetiva o hacer una opinión propia sobre el tema. Incluir por lo menos un contraargumento. 
 
 \section{Conclusión}
-Se ofrece una paráfrasis o síntesis reflexiva de las principales ideas desarrolladas en el texto, se enfatiza en la importancia de la tesis, se puede finalizar con una reflexión, cita o afirmación. Deben explicar cómo el tema afecta al lector y/o explicar cómo tu tema produce una percepción más amplia. Producir en el lector la motivación suficiente para profundizar en el tema. También puedes presentar nuevas preguntas que se generaron en el ensayo. \cite{web1}.
+Se ofrece una paráfrasis o síntesis reflexiva de las principales ideas desarrolladas en el texto, se enfatiza en la importancia de la tesis, se puede finalizar con una reflexión, cita o afirmación. Deben explicar cómo el tema afecta al lector y/o explicar cómo tu tema produce una percepción más amplia. Producir en el lector la motivación suficiente para profundizar en el tema. El objetivo de esta sección es reafirmar tu argumento y persuadir a los lectores de apoyar tu afirmación. Trata de conectar el tema del ensayo con los intereses y valores de los lectores\cite{youArg} \cite{web1}.
 
 
 \medskip
