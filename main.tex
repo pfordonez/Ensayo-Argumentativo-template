@@ -11,6 +11,7 @@
 \usepackage{authblk}
 \usepackage{xcolor}
 \usepackage{academicons}
+\usepackage[toc,page]{appendix}
 
 \definecolor{orcidlogocol}{HTML}{A6CE39}
 
@@ -23,17 +24,32 @@
 }
 
 %No cambiar
-\affil[1]{Universidad Nacional de Loja, Ecuador, Facultad de Energía, CIS, Análisis y Diseño de Sistemas, profesor \href{mailto:pfordonez@unl.edu.ec}{pfordonez@unl.edu.ec}}
+\affil[1]{Universidad Nacional de Loja, Ecuador, Facultad de Energía, CIS, \href{mailto:pfordonez@unl.edu.ec}{pfordonez@unl.edu.ec}}
 
 \begin{document}
 \maketitle
 
 \section{Introducción}
 
-Se inicia con una \textbf{introducción} como primera oración o párrafo, y debe llamar la atención del lector y no dejarlo ir. Hay diferentes formas de llamar la atención del lector: puedes presentar una cita,  compartir una anécdota, analogía general sobre tu tema etc. Se debe plantear el tema que se abordará, contextualizar, ofrecer antecedentes, citar, delimitar el tema, explicar la tesis y objetivo del ensayo.
+Se inicia con una \textbf{introducción} como primera oración o párrafo, y debe llamar la atención del lector y no dejarlo ir. Hay diferentes formas de llamar la atención del lector: puedes presentar una cita,  compartir una anécdota, analogía general sobre tu tema etc. Se debe plantear el tema que se abordará, contextualizar, ofrecer antecedentes, citar, delimitar el tema, explicar la \textbf{tesis} y objetivo del ensayo.
+
 
 \section{Desarrollo}
+
 Es el cuerpo del ensayo y esta conformado por los diferentes párrafos que desarrollan las ideas que justifican y argumentan la tesis propuesta, Se cita\footnote{Se espera por lo menos 5 referencias por página}, conceptualiza, explica, compara, describe, narra, expone y se argumenta. Se puede iniciar un párrafo con una cronología situando con fechas los antecedentes, luego una descripción y finalizar con un ejemplo, sin embargo no se debe analizar los hechos de manera subjetiva o hacer una opinión propia sobre el tema. Incluir por lo menos un contraargumento. 
+
+%Se puede usar la siguiente estructura para el desarrollo:
+
+%Factible /basado en hechos Factible /basado en hechos >> relación con las variables de la TESIS>> relación con las variables de la TESIS]
+
+%Viabilidad / basado en hechos >> relación con las variables de la TESIS
+
+%[Hechos >> (TRABAJOS RELACIONADOS)relación con las variables de la TESIS]
+
+%Instrumentos: (se anexan)
+%*Entrevista/encuesta/test...
+%*map Reviews
+%*Sistematic reviews
 
 \section{Conclusión}
 Se ofrece una paráfrasis o síntesis reflexiva de las principales ideas desarrolladas en el texto, se enfatiza en la importancia de la tesis, se puede finalizar con una reflexión, cita o afirmación. Deben explicar cómo el tema afecta al lector y/o explicar cómo tu tema produce una percepción más amplia. Producir en el lector la motivación suficiente para profundizar en el tema. El objetivo de esta sección es reafirmar tu argumento y persuadir a los lectores de apoyar tu afirmación. Trata de conectar el tema del ensayo con los intereses y valores de los lectores \cite{youArg} \cite{web1}.
@@ -43,5 +59,22 @@ Se ofrece una paráfrasis o síntesis reflexiva de las principales ideas desarro
 
 \bibliographystyle{ieeetr}%Used BibTeX style is unsrt
 \bibliography{bib}
+
+\begin{appendices}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+\makeatletter
+\addtocontents{toc}{%
+\begingroup
+\let\protect\l@chapter\protect\l@section
+\let\protect\l@section\protect\l@subsection
+}
+
+\chapter{Titulo del anexo}
+\section{Q}
+
+(All the info)
+
+\addtocontents{toc}{\endgroup}
+\end{appendices}
 
 \end{document}
